@@ -1,0 +1,22 @@
+set nocompatible
+filetype off
+" Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-scripts/SearchComplete'
+Plugin 'junegunn/rainbow_parentheses.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'jlanzarotta/bufexplorer'
+"Plugin 'mutewinter/vim-tmux'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-scripts/Conque-Shell'
+Plugin 'flazz/vim-colorschemes'
+call vundle#end()
+" Vundle end
+filetype plugin indent on
+
+"$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"$ vim +PluginInstall +qall
