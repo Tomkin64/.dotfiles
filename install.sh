@@ -1,5 +1,7 @@
 #!/bin/bash
 sudo apt install tmux vim lnav curl git zsh --yes
+mkdir ~/.cache/zsh
+touch ~/.cache/zsh/history
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/tmux-conf ~/.tmux.conf
 ln -s ~/.dotfiles/vimrc-install ~/.vimrc
