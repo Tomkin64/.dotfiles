@@ -42,8 +42,9 @@ alias duh='du -h --max-depth=1'
 alias vi='vim'
 alias ~='cd ~'
 alias rzc='source ~/.zshrc'
-alias zshrc="vim ~/.zshrc"
-alias vimrc="vim ~/.vimrc"
+alias zshrc='vim ~/.zshrc'
+alias vimrc='vim ~/.vimrc'
+alias tx='tmux a'
 
 # Exports
 export EDITOR=vim
