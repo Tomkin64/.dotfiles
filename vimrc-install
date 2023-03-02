@@ -1,22 +1,15 @@
-set nocompatible
-filetype off
-" Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-scripts/SearchComplete'
-Plugin 'junegunn/rainbow_parentheses.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'jlanzarotta/bufexplorer'
-"Plugin 'mutewinter/vim-tmux'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'vim-scripts/Conque-Shell'
-Plugin 'flazz/vim-colorschemes'
-call vundle#end()
-" Vundle end
-filetype plugin indent on
+" Plugins will be downloaded under the specified directory.
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
-"$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-"$ vim +PluginInstall +qall
+" Declare the list of plugins.
+Plug 'vim-airline/vim-airline'                                                                                                                                                               
+Plug 'vim-scripts/SearchComplete'                                                                                                                                                            
+Plug 'junegunn/rainbow_parentheses.vim'                                                                                                                                                      
+Plug 'vim-syntastic/syntastic'                                                                                                                                                               
+Plug 'flazz/vim-colorschemes'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+"$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"$ vim +PlugInstall +qall
