@@ -1,3 +1,3 @@
 # dotfiles
 
-my dotfiles on for my Debian machines
+my dotfiles on for my Debian/Ubuntu machines
