@@ -52,10 +52,10 @@ fi
 
 # Load zsh-autosuggestions.zsh
 if [ -d "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] ; then
-    source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+     source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 fi
 
 # Load zsh-syntax-highlighting
 if [ -d "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] ; then
-    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+     source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 fi
