@@ -1,5 +1,8 @@
 #!/bin/bash
-sudo apt install tmux vim lnav curl git zsh htop strace --yes
+if [ "$(whoami)" != "root" ]; then
+	SUDO=sudo
+fi
+${SUDO} apt install tmux vim lnav curl git zsh htop strace --yes
 mkdir -p ~/.cache/zsh
 touch ~/.cache/zsh/history
 ln -s ~/.dotfiles/zshrc ~/.zshrc
