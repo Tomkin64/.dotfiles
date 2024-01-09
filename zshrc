@@ -4,15 +4,16 @@
 # Enable colors and change prompt:
 autoload -U colors && colors
 if [[ $EUID -ne 0 ]]; then
-     PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+     PS2="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 else
      PS1="%B%{$fg[red]%}[%{$fg[red]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}#%b "
 fi
 
 # History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=120000
+SAVEHIST=120000
 HISTFILE=~/.cache/zsh/history
+SHARE_HISTORY=on
 
 # Basic auto/tab complete:
 autoload -U compinit
