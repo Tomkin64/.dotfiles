@@ -42,6 +42,7 @@ alias rzc='source ~/.zshrc'
 alias zshrc='vim ~/.zshrc'
 alias vimrc='vim ~/.vimrc'
 alias tx='tmux a'
+alias ssha='eval $(ssh-agent) && ssh-add'
 
 # Exports
 export EDITOR=vim
