@@ -1,0 +1,23 @@
+[init]
+	defaultBranch = main
+[user]
+	email = tom@tomkadlec.cz
+	name = Tomkin64
+[push]
+	default = simple
+
+[color]
+	ui = auto
+
+[alias]
+p = pull --rebase
+b = branch -v
+s = status -s
+d = diff
+ds = diff --staged
+c = checkout
+cm = commit
+cma = commit --amend
+
+[rebase]
+autosquash = false
