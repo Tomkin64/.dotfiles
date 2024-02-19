@@ -10,6 +10,7 @@
 	ui = auto
 
 [alias]
+a = add -A
 p = pull --rebase
 b = branch -v
 s = status -s
